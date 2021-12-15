@@ -47,7 +47,6 @@ function loginCheck(req, res, next) {
             errno: -1,
             msg: '登录失败'
         })
-
         // console.log('模拟登陆成功')
         // next()
     })
@@ -69,7 +68,7 @@ app.post('/api/get-post-data', (req, res, next) => {
     })
 })
 
-app.use((req, res, next) => {
+app.use((req, res, next) => { 
     console.log('处理 404')
     res.json({
         errno: -1,
